@@ -10,11 +10,11 @@ The simple **Wintel Api** demonstrates a minimal e-commerce application that all
 
 **Product Feature**
 
-    - Create a product
-    - Get all products (with pagination)
-    - Get a single product
-    - Update a single product
-    - Delete a single product
+    - [Create a product - POST](https://wintel.onrender.com/api/v1/products)
+    - [Get all products - GET] (https://wintel.onrender.com/api/v1/products)
+    - [Get a single product - GET: `where :id is either productId or id field`](https://wintel.onrender.com/api/v1/products/:id/single)
+    - [Update a single product - PATCH: `where :id is either productId or id field`](https://wintel.onrender.com/api/v1/products/:id/single)
+    - [Delete a single product - DELETE: `where :id is either productId or id field`](https://wintel.onrender.com/api/v1/products/:id/single)
   
 ### Prerequisites
 

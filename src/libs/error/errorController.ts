@@ -106,10 +106,10 @@ const errorController = (
     err.statusCode = err.statusCode || STATUS.INTERNAL_SERVER_ERROR;
     err.status = err.status || MSG.ERROR;
 
-    if (process.env.NODE_ENV !== DEVELOPMENT) {
+    if (process.env.NODE_ENV == DEVELOPMENT) {
         // send error response
         sendErrDev(err, req, res);
-    } else if (process.env.NODE_ENV !== PRODUCTION) {
+    } else if (process.env.NODE_ENV == PRODUCTION) {
         let error: CustomErrorHandler | any = { ...err, name: err.name, message: err.message };
         // eslint-disable-next-line no-proto
         // error.__proto__ = err;
